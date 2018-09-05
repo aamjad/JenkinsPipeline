@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('inti') {
+            steps {
+                echo 'Starting init stage...'
+            }
+        }
+        stage('compile') {
+            steps {
+                echo 'Starting compile stage ...'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'Starting build stage ...'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'Starting deploy stage ...'
+            }
+        }
+    }
+}
